@@ -1,0 +1,43 @@
+<head>
+	<style>
+	#waves {
+		background-color: white;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="container">	
+	<svg id="waves" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="100%" height="400">
+	</svg>
+	</div>
+	<script type='text/javascript' src='/greensock-js/src/minified/TweenMax.min.js'></script>
+	<script type='text/javascript' src='/greensock-js/src/minified/TimelineMax.min.js'></script>
+	<script type="text/javascript" src="/greensock-js/src/minified/plugins/ModifiersPlugin.min.js"></script>
+	<script type="text/javascript" src="/greensock-js/src/minified/plugins/MorphSVGPlugin.js"></script>
+	<script type="text/javascript" src="js/Ribbon.js"></script>
+	<script src="../jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	var r1 = new Ribbon(document.getElementById("waves"), {ribbonWidth: 10, y: 0, color: "linear-gradient(100deg, #24A4EA, #379DEB 25%, #B76BF0)", opacity: 0.1, increments: 50, colorSpeed: .01, type: "ribbon", reverse: true, modifiers:{
+			o: { m: 13, d: .14, s: 110   },
+			a: { m: 14, d: .3,  s: -9  },
+			n: { m: 10, d: .15, s: -10 }
+	}});
+	var r1 = new Ribbon(document.getElementById("waves"), {ribbonWidth: 10, y: 0, color: "linear-gradient(100deg, #24A4EA, #379DEB 25%, #B76BF0)", opacity: 0.33, increments: 50, colorSpeed: .01, type: "ribbon", reverse: true, modifiers:{
+			n: { m: 14, d: .34, s: -10   },
+			a: { m: 13, d: .4,  s: -9  },
+			o: { m: 10, d: .15, s: 50 }
+	}});
+	var r1 = new Ribbon(document.getElementById("waves"), {ribbonWidth: 10, y: 0, color: "linear-gradient(100deg, #24A4EA, #379DEB 25%, #B76BF0)", opacity: 0.5, increments: 50, colorSpeed: .01, type: "ribbon", reverse: true, modifiers:{
+			n: { m: 12, d: .24, s: -9   },
+			o: { m: 12, d: .2,  s: 35  },
+			a: { m: 10, d: .15, s: -10 }
+	}});
+	var r1 = new Ribbon(document.getElementById("waves"), {ribbonWidth: 10, y: 0, color: "linear-gradient(100deg, #24A4EA, #379DEB 25%, #B76BF0)", opacity: 1, increments: 50, colorSpeed: .01, type: "ribbon", reverse: true, modifiers:{
+			a: { m: -12, d: .14, s: -10   },
+			n: { m: 13, d: .2,  s: -9  },
+			o: { m: -10, d: .15, s: 20 }
+	}});
+	
+	</script>
+</body>
